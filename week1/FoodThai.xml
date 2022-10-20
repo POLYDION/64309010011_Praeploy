@@ -2,6 +2,52 @@
     <thaifood>
         <foodID>001</foodID>
         <foodName>ผัดไท</foodName>
-        <price>120 บาท</price>
+        <price>60 บาท</price>
+        
     </thaifood>
+    <thaifood>
+        <foodID>002</foodID>
+        <foodName>กะเพรา</foodName>
+        <price>50 บาท</price>
+    </thaifood>
+    <thaifood>
+        <foodID>003</foodID>
+        <foodName>ต้มยำกุ้ง</foodName>
+        <price>100 บาท</price>
+    </thaifood>
+    <thaifood>
+        <foodID>004</foodID>
+        <foodName>ผัดพริกแกง</foodName>
+        <price>60 บาท</price>
+    </thaifood>  
+    <thaifood>
+        <foodID>005</foodID>
+        <foodName>ปูผัดผงกะหรี่</foodName>
+        <price>120 บาท</price>
+    </thaifood> 
+    <thaifood>
+        <foodID>006</foodID>
+        <foodName>ไก่ทอดกระเทียม</foodName>
+        <price>50 บาท</price>
+    </thaifood>
+    <thaifood>
+        <foodID>007</foodID>
+        <foodName>ทะเลผัดฉ่า</foodName>
+        <price>80 บาท</price>
+    </thaifood> 
+    <thaifood>
+        <foodID>008</foodID>
+        <foodName>หมูกรอบผัดพริกเผา</foodName>
+        <price>60 บาท</price>
+    </thaifood>   
+    <thaifood>
+        <foodID>009</foodID>
+        <foodName>แกงส้มกุ้ง</foodName>
+        <price>80 บาท</price>
+    </thaifood>    
+    <thaifood>
+        <foodID>010</foodID>
+        <foodName>หมูผัดเม็ดมะม่วง</foodName>
+        <price>100 บาท</price>
+    </thaifood>                        
 </food>
