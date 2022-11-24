@@ -79,3 +79,5 @@ let bonus = {
             "rate": 0.8,
         }]
 }
+console.log(em)
+console.log(bonus)
