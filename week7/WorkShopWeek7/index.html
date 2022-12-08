@@ -41,17 +41,18 @@
                 document.getElementById('display').innerHTML = '<table class="table">' + temp + '</table>'
             }
         }
+        if (i >= getAJAX) {
+            function next() {
+                console.log(i);
+                i++;
+                getAJAX();
+            }
 
-        function next() {
-            console.log(i);
-            i++;
-            getAJAX();
-        }
-
-        function pre() {
-            console.log(i);
-            i--;
-            getAJAX();
+            function pre() {
+                console.log(i);
+                i--;
+                getAJAX();
+            }
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
