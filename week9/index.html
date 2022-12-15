@@ -31,11 +31,11 @@
                 let obj = JSON.parse(this.responseText);
                 let temp = '';
                 temp +=
-                    '<tr><td>' + obj[i].id + '</td><td>' + obj[i].movieName + '</td>' +
+                    '<tr><td>' + obj[i].id + '</td><td>' + obj[i].movieName + '</td>' +'<td><img src="' + obj[i].picture +'</td>' +'" width="200px"></td>'+
                     '<td>' + obj[i].movieLength + '</td>' + '<td>' + obj[i].director + '</td>' +
                     '<td>' + obj[i].category + '</td>' + '<td>' + obj[i].trailer +
                     '"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td><td>' +
-                    +'<td>' + obj[i].review.review + '</td>' + '<td><img src="' + obj[i].picture + '</td>'+'" width="200px"></td>' + '<td>' + obj[i].review.score.average + 
+                    +'<td>' + obj[i].review.review + '</td>' + '<td>' + obj[i].review.score.average + '</td>'
                 document.getElementById('display').innerHTML = '<table class="table">' + temp + '</table>'
             }
         }
