@@ -30,13 +30,11 @@
             xhttp.onload = function () {
                 let obj = JSON.parse(this.responseText);
                 let temp = '';
-                temp += '<thead><tr><th scope="col">ID</th><th scope="col">title</th><th scope="col">ISBN</th>' +
-                    '<th scope="col">description</th><th scope="col">author</th><th scope="col">year</th>' +
-                    '<th scope="col">price</th><th scope="col">picture</th></tr></thead>' +
+                temp +=
                     '<tr><td>' + obj[i].id + '</td><td>' + obj[i].movieName + '</td>' +
                     '<td>' + obj[i].movieLength + '</td>' + '<td>' + obj[i].director + '</td>' +
                     '<td>' + obj[i].category + '</td>' + '<td>' + obj[i].trailer + '</td>' +
-                    '<td>' + obj[i].review + '</td>' + '<td><img src="img/' + obj[i].picture +
+                    '<td>' + obj[i].review.score.average + '</td>' + '<td><img src="img/' + obj[i].picture +
                     '" width="200px"></td></tr>'
                 document.getElementById('display').innerHTML = '<table class="table">' + temp + '</table>'
             }
