@@ -30,9 +30,7 @@
             xhttp.onload = function () {
                 let obj = JSON.parse(this.responseText);
                 let temp = '';
-                temp += '<thead><tr><th scope="col">ID</th><th scope="col">title</th><th scope="col">ISBN</th>' +
-                    '<th scope="col">description</th><th scope="col">author</th><th scope="col">year</th>' +
-                    '<th scope="col">price</th><th scope="col">picture</th></tr></thead>' +
+                temp += 
                     '<tr><td>' + obj[i].id + '</td><td>' + obj[i].title + '</td>' +
                     '<td>' + obj[i].ISBN + '</td>' + '<td>' + obj[i].description + '</td>' +
                     '<td>' + obj[i].author + '</td>' + '<td>' + obj[i].year + '</td>' +
