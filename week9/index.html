@@ -12,21 +12,22 @@
 
   <style>
     .btn {
-      margin: 20px 5px 20px 0px;
-      background-color: #3A4F7A;
-      color: #FFC6D3;
+      margin: 30px 10px 20px 0px;
+      background-color: #D5CEA3;
+      color: #3C2A21;
       padding: 10px;
+
     }
 
     .th {
-      background-color: #3A4F7A;
-      color: #FFC6D3;
+      background-color: #3C2A21;
+      color: #E5E5CB;
       text-align: center;
       font-size: 12px;
     }
 
     .tr {
-      background-color: #E98EAD;
+      background-color: #D5CEA3;
       font-size: 20px;
       text-align: center;
 
@@ -36,7 +37,7 @@
   <title></title>
 </head>
 
-<body style="background-color:#FFC6D3;" onload="getAjex()">
+<body style="background-color:#1A120B;" onload="getAjex()">
   <div class="container">
     <button class="btn" onclick="prev()">ก่อนหน้า</button>
     <button class="btn" onclick="next()">ถัดไป</button>
@@ -57,7 +58,7 @@
         temp +=
           '<thead class="th">' +
           '<th>ID</th>' +
-          '<th>Picture</> ' +
+          '<th>รูป</> ' +
           '<th>ชื่อภาพยนต์</th>' +
           '<th>ความยาวหนัง</th>' +
           '<th>ผู้กำกับ</th>' +
@@ -67,8 +68,8 @@
           '</thead > ' +
           '<tr class="tr">' + '<td>' + obj[i].id + '</td>' +
           '<td>' + '<img src="' + obj[i].picture + '" width="200px"></td>' +
-          '<td>' + obj[i].movieName + '</td>' +'<td>' + obj[i].movieLength + '</td>' +
-          '<td>' + obj[i].director + '</td>' +'<td>' + obj[i].category + '</td>' +
+          '<td>' + obj[i].movieName + '</td>' + '<td>' + obj[i].movieLength + '</td>' +
+          '<td>' + obj[i].director + '</td>' + '<td>' + obj[i].category + '</td>' +
           '<td>' + '<iframe width="500" height="295" src="' + obj[i].trailer +
           '"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
           '</td>' +
