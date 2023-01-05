@@ -31,6 +31,14 @@
       font-size: 20px;
       text-align: center;
     }
+    .b{
+      color: white;
+      text-align: center;
+      width: 300px;
+      padding: 10px;
+      border: 5px solid #FFECEF;
+      margin: auto;
+    }
   </style>
 
   <title></title>
@@ -42,11 +50,12 @@
     <button class="btn" onclick="next()">ถัดไป</button>
   </div>
   <div class="container" id="display"></div>
-
+  <div class="b">
+    <a href="addAnime.html"><b>เพิ่ม Anime</b></a>
+  </div>
   <script>
     let xhttp = new XMLHttpRequest();
     let i = 0;
-
     function getAjex() {
       xhttp.open("GET", 'http://localhost:3000/RecomAnime');
       xhttp.send();
@@ -67,7 +76,7 @@
           '<th>Episode</th>' +
           '</thead > ' +
           '<tr class="tr">' + '<td>' + obj[i].id + '</td>' +
-          '<td>' + '<img src="img/' + obj[i].poster + '"width="200px" ></td>' +
+          '<td>' + '<img src="' + obj[i].poster + '"width="200px" ></td>' +
           '<td>' + obj[i].name + '</td>' + '<td>' + obj[i].category + '</td>' +
           '<td>' + obj[i].synopsis + '</td>' + '<td>' + obj[i].director + '</td>' + 
           '<td>' + obj[i].studio + '</td>'+
