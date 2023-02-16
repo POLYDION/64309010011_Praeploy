@@ -1,4 +1,4 @@
-+var emp=[{
+var emp=[{
     "IDemp":10001,
     "Name":"นางสาว ชนิสาไกรรอด",
     "Dept":"IT",
